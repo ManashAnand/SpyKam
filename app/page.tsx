@@ -2,6 +2,9 @@
 
 import React, { useRef, useState } from "react";
 import Webcam from "react-webcam";
+import { Separator } from "@/components/ui/separator"
+import { ModeToggle } from "@/components/ModeToggle";
+
 
 const Home = () => {
   const webcamRef = useRef<Webcam>(null);
@@ -28,8 +31,26 @@ const Home = () => {
         <div className="border-primary/5 border-2 max-w-xs flex flex-col gap-2 justify-between shadow-md rounded-md p-4">
           {/* top secion  */}
           <div className="flex flex-col gap-2">
+            <ModeToggle/>
             
+          <Separator className='my-2' />
+
           </div>
+
+
+          <div className='flex flex-col gap-2'>
+            <Separator className='my-2' />
+            </div>
+
+
+
+            <div className='flex flex-col gap-2'>
+            <Separator className='my-2' />  
+             </div>
+
+
+
+
         </div>
       </div>
     </div>
