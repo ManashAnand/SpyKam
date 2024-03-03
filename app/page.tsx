@@ -87,7 +87,7 @@ const Home = () => {
     return () => {
       clearInterval(interval)
     }
-  },[webcamRef.current,model])
+  },[webcamRef.current,model,mirrored])
 
   const runPrediction = async () => {
     if(model && webcamRef.current && webcamRef.current.video?.readyState === 4){
